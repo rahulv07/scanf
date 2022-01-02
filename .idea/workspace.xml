@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="322ce312-c34e-4853-b955-089cbd6e982e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/bio_guard/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bio_guard/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bio_guard/lib/screens/homepage.dart" beforeDir="false" afterPath="$PROJECT_DIR$/bio_guard/lib/screens/homepage.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="235BgKEpZqg0FJw7Qg1Yltb0jWk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="C:/src/flutter/bin/cache/dart-sdk" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="322ce312-c34e-4853-b955-089cbd6e982e" name="Default Changelist" comment="" />
+      <created>1641014177187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641014177187</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="214" y="60" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1641014589513">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="214" y="60" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1641014589513" />
+    <state x="541" y="160" key="FileChooserDialogImpl" timestamp="1641014530711">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="541" y="160" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1641014530711" />
+    <state x="270" y="50" key="SettingsEditor" timestamp="1641014547618">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="270" y="50" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1641014547618" />
+  </component>
+</project>
