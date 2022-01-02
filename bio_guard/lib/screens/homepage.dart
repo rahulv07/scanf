@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:bio_guard/auth.dart';
 import 'package:intl/intl.dart';
 
-import 'auth.dart';
-
-class Register extends StatefulWidget {
-  const Register({Key? key}) : super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
-  _RegisterState createState() => _RegisterState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _RegisterState extends State<Register> {
+class _HomePageState extends State<HomePage> {
   String checkIn = "----";
   String checkOut = "-----";
 
@@ -19,7 +18,7 @@ class _RegisterState extends State<Register> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Check',
+          'BioGuard',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
       ),

@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   local_auth: ^1.1.7
   intl: ^0.17.0
+  wifi_iot: ^0.3.8
+  location: ^4.3.0
+  flutter_spinkit: ^5.1.0
 
 dev_dependencies:
   flutter_test:
