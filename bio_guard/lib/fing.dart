@@ -1,17 +1,16 @@
 import 'package:bio_guard/secret.dart';
 import 'package:flutter/material.dart';
-import 'package:local_auth/local_auth.dart';
 import 'auth.dart';
 import 'custom_colors.dart';
-class finge extends StatefulWidget {
-  const finge({Key? key}) : super(key: key);
+
+class Finge extends StatefulWidget {
+  const Finge({Key? key}) : super(key: key);
 
   @override
-  _fingeState createState() => _fingeState();
+  _FingeState createState() => _FingeState();
 }
 
-class _fingeState extends State<finge> {
-
+class _FingeState extends State<Finge> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -31,7 +30,7 @@ class _fingeState extends State<finge> {
             ),
             onPressed: () async {
               bool isAuthenticated =
-              await Authentication.authenticateWithBiometrics();
+                  await Authentication.authenticateWithBiometrics();
 
               if (isAuthenticated) {
                 Navigator.of(context).push(
@@ -61,8 +60,6 @@ class _fingeState extends State<finge> {
             ),
           ),
           const SizedBox(height: 16.0),
-
-
         ],
       ),
     );
