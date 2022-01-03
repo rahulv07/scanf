@@ -1,3 +1,4 @@
+import 'package:bio_guard/screens/homepage.dart';
 import 'package:bio_guard/screens/loading.dart';
 import 'package:flutter/material.dart';
 //import 'screens/homepage.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: LoadingPage(),
+      home: const HomePage(),
     );
   }
 }
