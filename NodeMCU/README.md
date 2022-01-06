@@ -1,2 +1,1 @@
-# NodeMCU code
-## Work in Progress...
+# NodeMCU as SoftAP

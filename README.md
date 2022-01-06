@@ -1,5 +1,5 @@
-# Bio-Guard : Contact less attendance system
-## Work In Progress...
+# BioGuard : Zero-contact Biometric System
+Loading fingerprint...
 
 
 
