@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "NodeMCU softAP";
+const char* ssid = "NodeMCU";
 const char* password = "bioguarded";
 
 void setup()

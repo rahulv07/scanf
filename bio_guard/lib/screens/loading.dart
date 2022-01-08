@@ -88,7 +88,8 @@ class _LoadingPageState extends State<LoadingPage> {
                 )
               : SpinKitDoubleBounce(
                   color: Colors.grey,
-                  size: MediaQuery.of(context).size.width * 0.15),
+                  size: MediaQuery.of(context).size.width * 0.15,
+                ),
         ],
       ),
     );

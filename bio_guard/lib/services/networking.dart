@@ -3,8 +3,8 @@ import 'package:wifi_iot/wifi_iot.dart';
 import 'dart:async';
 
 class Networking {
-  final _hostSSID = "Redmi Note 10 Pro";
-  final _hostPWD = "VishnuVmv";
+  final _hostSSID = "NodeMCU";
+  final _hostPWD = "bioguarded";
 
   //Function to enable location in the device
   Future<bool> enableLocation() async {
