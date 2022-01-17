@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179461882890",
+    "project_id": "bioguard-201d1",
+    "storage_bucket": "bioguard-201d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179461882890:android:37d9d38df5c905f7ef4bf3",
+        "android_client_info": {
+          "package_name": "com.example.bio_guard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179461882890-kocmj52ushocadcss8lc7etlhrgomsqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuPyHVuSwrBBlmLH0Kh4w1iAy0LQ-CJLM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179461882890-kocmj52ushocadcss8lc7etlhrgomsqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
