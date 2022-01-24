@@ -1,6 +1,6 @@
 import 'package:bio_guard/secret.dart';
 import 'package:flutter/material.dart';
-import 'auth.dart';
+import 'services/auth.dart';
 import 'custom_colors.dart';
 
 class Finge extends StatefulWidget {

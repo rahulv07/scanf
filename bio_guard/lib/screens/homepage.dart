@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bio_guard/auth.dart';
+import '../services/auth.dart';
 import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
