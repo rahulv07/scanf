@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/src/provider.dart';
 import '../loading.dart';
 import 'login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
+import 'package:bio_guard/services/auth.dart';
 
 class MyRegister extends StatefulWidget {
   const MyRegister({Key? key}) : super(key: key);
@@ -151,22 +153,13 @@ class _MyRegisterState extends State<MyRegister> {
                                       setState(() {
                                         showSpinner = true;
                                       });
-                                      try {
-                                        final newUser = await _auth
-                                            .createUserWithEmailAndPassword(
-                                                email: email,
-                                                password: password);
-                                        if (newUser != null) {
-                                          Navigator.of(context).push(
-                                            MaterialPageRoute(
-                                              builder: (context) =>
-                                                  LoadingPage(),
-                                            ),
+                                      context
+                                          .read<AuthenticationProvider>()
+                                          .signUp(
+                                            email: email,
+                                            password: password,
                                           );
-                                        }
-                                      } catch (e) {
-                                        print(e);
-                                      }
+
                                       setState(() {
                                         showSpinner = false;
                                       });

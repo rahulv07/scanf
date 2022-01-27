@@ -3,23 +3,49 @@ import 'package:bio_guard/screens/loading.dart';
 import 'package:bio_guard/screens/login7/login.dart';
 import 'package:flutter/material.dart';
 //import 'screens/homepage.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'services/auth.dart';
+import 'screens/loading.dart';
+import 'screens/login7/login.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
-void main() {
-  runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await FirebaseApp.instance;
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return MultiProvider(
+      providers: [
+        Provider<AuthenticationProvider>(
+          create: (_) => AuthenticationProvider(FirebaseAuth.instance),
+        ),
+        StreamProvider(
+          create: (context) => context.read<AuthenticationProvider>().authState,
+        )
+      ],
+      child: MaterialApp(
+        title: 'Firebase Authentication',
+        home: Authenticate(),
       ),
-      home: const Login7(),
     );
+  }
+}
+
+class Authenticate extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final firebaseUser = context.watch<FirebaseUser>();
+
+    if (firebaseUser != null) {
+      return LoadingPage();
+    }
+    return const Login7();
   }
 }

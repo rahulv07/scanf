@@ -1,7 +1,7 @@
-import 'package:bio_guard/secret.dart';
+import 'secret.dart';
 import 'package:flutter/material.dart';
-import 'services/auth.dart';
-import 'custom_colors.dart';
+import '../services/auth.dart';
+import '../constants/custom_colors.dart';
 
 class Finge extends StatefulWidget {
   const Finge({Key? key}) : super(key: key);

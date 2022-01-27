@@ -1,4 +1,6 @@
+import 'package:bio_guard/services/auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/src/provider.dart';
 import '../loading.dart';
 import 'signup.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
@@ -99,23 +101,12 @@ class _Login7State extends State<Login7> {
                                       setState(() {
                                         showSpinner = true;
                                       });
-                                      try {
-                                        final user = await _auth
-                                            .signInWithEmailAndPassword(
-                                                email: email,
-                                                password: password);
-                                        // ignore: unnecessary_null_comparison
-                                        if (user != null) {
-                                          Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    LoadingPage()),
+                                      context
+                                          .read<AuthenticationProvider>()
+                                          .signIn(
+                                            email: email,
+                                            password: password,
                                           );
-                                        }
-                                      } catch (e) {
-                                        print(e);
-                                      }
                                       setState(() {
                                         showSpinner = false;
                                       });
