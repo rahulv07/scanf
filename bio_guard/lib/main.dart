@@ -1,4 +1,5 @@
 // @dart=2.9
+import 'package:bio_guard/screens/homepage.dart';
 import 'package:bio_guard/screens/loading.dart';
 import 'package:bio_guard/screens/login7/login.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,6 @@ import 'services/auth.dart';
 import 'screens/loading.dart';
 import 'screens/login7/login.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 Future<void> main() async {
@@ -44,7 +44,7 @@ class Authenticate extends StatelessWidget {
     final firebaseUser = context.watch<FirebaseUser>();
 
     if (firebaseUser != null) {
-      return LoadingPage();
+      return const HomePage();
     }
     return const Login7();
   }

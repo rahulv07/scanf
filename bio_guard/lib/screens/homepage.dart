@@ -1,3 +1,6 @@
+import 'package:bio_guard/services/database.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import '../services/auth.dart';
 import 'package:intl/intl.dart';
@@ -12,6 +15,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   String checkIn = "";
   String checkOut = "";
+
+  Future<String> getUserID() async {
+    var firebaseUser = await FirebaseAuth.instance.currentUser();
+    return firebaseUser.uid;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +65,8 @@ class _HomePageState extends State<HomePage> {
                               DateFormat("hh:mm a").format(DateTime.now());
                         });
                         print(checkIn);
+                        DataBase(userId: await getUserID())
+                            .writeData(collection: date, timestamp: checkIn);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           Authentication.customSnackBar(
@@ -89,8 +99,6 @@ class _HomePageState extends State<HomePage> {
                           checkOut =
                               DateFormat("hh:mm a").format(DateTime.now());
                         });
-
-                        print(checkOut);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           Authentication.customSnackBar(
