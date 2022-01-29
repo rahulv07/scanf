@@ -15,15 +15,23 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   String checkIn = "";
   String checkOut = "";
+  String date = DateFormat('EEE, d-M-y').format(DateTime.now());
+  late DataBase dataBase;
 
-  Future<String> getUserID() async {
+  Future initializeValues() async {
     var firebaseUser = await FirebaseAuth.instance.currentUser();
-    return firebaseUser.uid;
+    dataBase = DataBase(collection: date, userId: firebaseUser.uid);
+    dataBase.setData();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initializeValues();
   }
 
   @override
   Widget build(BuildContext context) {
-    String date = DateFormat('EEE, d-M-y').format(DateTime.now());
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -65,8 +73,7 @@ class _HomePageState extends State<HomePage> {
                               DateFormat("hh:mm a").format(DateTime.now());
                         });
                         print(checkIn);
-                        DataBase(userId: await getUserID())
-                            .writeData(collection: date, timestamp: checkIn);
+                        dataBase.checkIn(timestamp: checkIn);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           Authentication.customSnackBar(
@@ -99,6 +106,8 @@ class _HomePageState extends State<HomePage> {
                           checkOut =
                               DateFormat("hh:mm a").format(DateTime.now());
                         });
+                        print(checkOut);
+                        dataBase.checkOut(timestamp: checkOut);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           Authentication.customSnackBar(

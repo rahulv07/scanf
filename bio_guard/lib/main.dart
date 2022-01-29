@@ -31,9 +31,9 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: MaterialApp(
-        title: 'Firebase Authentication',
-        home: Authenticate(),
-      ),
+          title: 'Firebase Authentication',
+          home: Authenticate(),
+          debugShowCheckedModeBanner: false),
     );
   }
 }
