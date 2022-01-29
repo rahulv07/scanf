@@ -18,10 +18,10 @@ class _HomePageState extends State<HomePage> {
   String date = DateFormat('EEE, d-M-y').format(DateTime.now());
   late DataBase dataBase;
 
-  Future initializeValues() async {
+  Future<void> initializeValues() async {
     var firebaseUser = await FirebaseAuth.instance.currentUser();
     dataBase = DataBase(collection: date, userId: firebaseUser.uid);
-    dataBase.setData();
+    await dataBase.setData();
   }
 
   @override
