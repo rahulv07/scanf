@@ -42,7 +42,6 @@ class _LoadingPageState extends State<LoadingPage> {
       if (await networking.checkHost()) {
         if (await networking.connectHost()) {
           updateInfo(infotext: "Connecting to host...");
-
           Navigator.pushAndRemoveUntil(
               context,
               MaterialPageRoute(builder: (context) => const HomePage()),

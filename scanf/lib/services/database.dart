@@ -68,4 +68,42 @@ class DataBase {
       return false;
     }
   }
+
+  Future<bool> exists() async {
+    bool exist = false;
+    try {
+      await Firestore.instance
+          .collection(collection)
+          .document(userId)
+          .get()
+          .then((docSnapShot) {
+        exist = docSnapShot.exists;
+      });
+      return exist;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  Future<String> lastCheckIn() async {
+    var docSnapShot =
+        await Firestore.instance.collection(collection).document(userId).get();
+    var response = docSnapShot.data;
+    if (response["in"].length == 0) {
+      return "";
+    } else {
+      return response["in"].last;
+    }
+  }
+
+  Future<String> lastCheckOut() async {
+    var docSnapShot =
+        await Firestore.instance.collection(collection).document(userId).get();
+    var response = docSnapShot.data;
+    if (response["out"].length == 0) {
+      return "";
+    } else {
+      return response["out"].last;
+    }
+  }
 }
