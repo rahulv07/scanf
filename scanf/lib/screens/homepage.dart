@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                               DateFormat("hh:mm a").format(DateTime.now());
                         });
                         print(checkIn);
-                        dataBase.checkIn(timestamp: checkIn);
+                        dataBase.writeCheckIn(timestamp: checkIn);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           Authentication.customSnackBar(
@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                               DateFormat("hh:mm a").format(DateTime.now());
                         });
                         print(checkOut);
-                        dataBase.checkOut(timestamp: checkOut);
+                        dataBase.writeCheckOut(timestamp: checkOut);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           Authentication.customSnackBar(

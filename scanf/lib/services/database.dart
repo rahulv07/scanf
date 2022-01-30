@@ -11,9 +11,9 @@ class DataBase {
         {"in": FieldValue.arrayUnion([]), "out": FieldValue.arrayUnion([])});
   }
 
-  Future<void> checkIn({var timestamp}) async {
+  Future<void> writeCheckIn({var timestamp}) async {
     final firestore = Firestore.instance;
-    var shouldCheckin = await shouldCheckIn();
+    var shouldCheckin = await _shouldCheckIn();
     if (shouldCheckin) {
       firestore.collection(collection).document(userId).updateData({
         "in": FieldValue.arrayUnion([timestamp])
@@ -26,9 +26,9 @@ class DataBase {
     }
   }
 
-  Future<void> checkOut({var timestamp}) async {
+  Future<void> writeCheckOut({var timestamp}) async {
     final firestore = Firestore.instance;
-    var shouldCheckout = await shouldCheckOut();
+    var shouldCheckout = await _shouldCheckOut();
     if (shouldCheckout) {
       firestore.collection(collection).document(userId).updateData({
         "out": FieldValue.arrayUnion([timestamp])
@@ -41,7 +41,7 @@ class DataBase {
     }
   }
 
-  Future<bool> shouldCheckIn() async {
+  Future<bool> _shouldCheckIn() async {
     final firestore = Firestore.instance;
 
     var docSnapShot =
@@ -55,7 +55,7 @@ class DataBase {
     }
   }
 
-  Future<bool> shouldCheckOut() async {
+  Future<bool> _shouldCheckOut() async {
     final firestore = Firestore.instance;
 
     var docSnapShot =

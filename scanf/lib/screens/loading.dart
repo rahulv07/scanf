@@ -20,42 +20,41 @@ class _LoadingPageState extends State<LoadingPage> {
     super.initState();
   }
 
+  void updateInfo({required String infotext, bool isDenied = false}) {
+    setState(() {
+      infoText = infotext;
+      permissionDenied = isDenied;
+    });
+  }
+
   void mcuInterface() async {
     var networking = Networking();
 
     locationStatus = await networking.enableLocation();
     if (locationStatus) {
-      setState(() {
-        infoText = "Enabling WiFi...";
-      });
+      updateInfo(infotext: "Enabling wifi...");
     }
 
     wifiStatus = await networking.enableWifi();
 
     if (locationStatus && wifiStatus) {
+      updateInfo(infotext: "Searching for host...");
       if (await networking.checkHost()) {
         if (await networking.connectHost()) {
+          updateInfo(infotext: "Connecting to host...");
+
           Navigator.pushAndRemoveUntil(
               context,
               MaterialPageRoute(builder: (context) => const HomePage()),
               (route) => false);
         } else {
-          setState(() {
-            infoText = "Can't connect to Host";
-            permissionDenied = true;
-          });
+          updateInfo(infotext: "Can't connect to host", isDenied: true);
         }
       } else {
-        setState(() {
-          infoText = "Host not found";
-          permissionDenied = true;
-        });
+        updateInfo(infotext: "Host not found", isDenied: true);
       }
     } else {
-      setState(() {
-        infoText = "Enable Location and WiFi";
-        permissionDenied = true;
-      });
+      updateInfo(infotext: "Enable location and wifi", isDenied: true);
     }
   }
 
