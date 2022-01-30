@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "370533834419",
+    "project_id": "scanf-776d6",
+    "storage_bucket": "scanf-776d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370533834419:android:c674e7f4c515c1fd81dac6",
+        "android_client_info": {
+          "package_name": "com.example.scanf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370533834419-s893iu6mq4agr25tedfoa69h92t6oft4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3d208NrcGqox5TK7Zv2d9Gs5qzETO7dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370533834419-s893iu6mq4agr25tedfoa69h92t6oft4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

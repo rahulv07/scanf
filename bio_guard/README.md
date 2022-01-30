@@ -1,3 +1,0 @@
-# bio_guard application
-
-## Work in progress...
