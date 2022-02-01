@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/src/provider.dart';
+import 'package:restart_app/restart_app.dart';
+import '../loading.dart';
 import 'login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:scanf/services/auth.dart';
+import 'package:scanf/main.dart';
 
 class MyRegister extends StatefulWidget {
   const MyRegister({Key? key}) : super(key: key);
@@ -156,7 +159,17 @@ class _MyRegisterState extends State<MyRegister> {
                                           .signUp(
                                             email: email,
                                             password: password,
+                                          )
+                                          .then((value) {
+                                        if (value == "Signed up") {
+                                          Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    LoadingPage()),
                                           );
+                                        }
+                                      });
 
                                       setState(() {
                                         showSpinner = false;
@@ -176,7 +189,7 @@ class _MyRegisterState extends State<MyRegister> {
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  Navigator.push(
+                                  Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => const Login7(

@@ -1,0 +1,38 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alternadom.wifiiot" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml
+6
+7    <uses-feature android:name="android.hardware.wifi" />
+7-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:3:5-58
+7-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:3:19-55
+8
+9    <uses-permission android:name="android.permission.INTERNET" />
+9-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:4:5-67
+9-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:4:22-64
+10    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+10-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:5:5-75
+10-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:5:22-73
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:6:5-79
+11-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+12-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:8:5-79
+13-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:9:22-78
+15    <!-- TODO remove the below two permission from v1.0.0, user need to add this explicitly -->
+16    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+16-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:11:5-76
+16-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:11:22-73
+17    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+17-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:12:5-73
+17-->C:\Users\JINNAH\Downloads\flutter_windows_1.22.5-stable\flutter\.pub-cache\hosted\pub.dartlang.org\wifi_iot-0.3.12\android\src\main\AndroidManifest.xml:12:22-70
+18
+19</manifest>

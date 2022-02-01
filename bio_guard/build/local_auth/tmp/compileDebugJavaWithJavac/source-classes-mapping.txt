@@ -1,0 +1,13 @@
+io/flutter/plugins/localauth/AuthenticationHelper.java
+ io.flutter.plugins.localauth.AuthenticationHelper
+ io.flutter.plugins.localauth.AuthenticationHelper$1
+ io.flutter.plugins.localauth.AuthenticationHelper$2
+ io.flutter.plugins.localauth.AuthenticationHelper$3
+ io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler
+ io.flutter.plugins.localauth.AuthenticationHelper$UiThreadExecutor
+io/flutter/plugins/localauth/BuildConfig.java
+ io.flutter.plugins.localauth.BuildConfig
+io/flutter/plugins/localauth/LocalAuthPlugin.java
+ io.flutter.plugins.localauth.LocalAuthPlugin
+ io.flutter.plugins.localauth.LocalAuthPlugin$1
+ io.flutter.plugins.localauth.LocalAuthPlugin$2

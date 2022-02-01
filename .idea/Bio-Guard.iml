@@ -6,6 +6,9 @@
       <excludeFolder url="file://$MODULE_DIR$/bio_guard/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/bio_guard/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/bio_guard/build" />
+      <excludeFolder url="file://$MODULE_DIR$/scanf/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/scanf/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/scanf/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

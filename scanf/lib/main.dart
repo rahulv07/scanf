@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           create: (context) => context.read<AuthenticationProvider>().authState,
         )
       ],
-      child: MaterialApp(
+      child: const MaterialApp(
           title: 'Firebase Authentication',
           home: Authenticate(),
           debugShowCheckedModeBanner: false),
@@ -37,6 +37,8 @@ class MyApp extends StatelessWidget {
 }
 
 class Authenticate extends StatelessWidget {
+  const Authenticate({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final firebaseUser = context.watch<FirebaseUser>();

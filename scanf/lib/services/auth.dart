@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:local_auth/local_auth.dart';
 // ignore: import_of_legacy_library_into_null_safe
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:scanf/screens/login7/login.dart';
+import 'package:scanf/main.dart';
 
 class AuthenticationProvider {
   final FirebaseAuth firebaseAuth;
@@ -19,6 +21,7 @@ class AuthenticationProvider {
     try {
       await firebaseAuth.signInWithEmailAndPassword(
           email: email, password: password);
+      Authenticate();
       return "Signed in";
     } on AuthException catch (e) {
       return e.message;
@@ -30,6 +33,7 @@ class AuthenticationProvider {
     try {
       await firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: password);
+      Authenticate();
       return "Signed up";
       // ignore: nullable_type_in_catch_clause
     } on AuthException catch (e) {

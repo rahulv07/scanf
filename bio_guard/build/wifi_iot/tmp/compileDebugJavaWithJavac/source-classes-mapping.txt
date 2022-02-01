@@ -1,0 +1,26 @@
+info/whitebyte/hotspotmanager/FinishScanListener.java
+ info.whitebyte.hotspotmanager.FinishScanListener
+info/whitebyte/hotspotmanager/ClientScanResult.java
+ info.whitebyte.hotspotmanager.ClientScanResult
+com/alternadom/wifiiot/BuildConfig.java
+ com.alternadom.wifiiot.BuildConfig
+info/whitebyte/hotspotmanager/WIFI_AP_STATE.java
+ info.whitebyte.hotspotmanager.WIFI_AP_STATE
+info/whitebyte/hotspotmanager/WifiApManager.java
+ info.whitebyte.hotspotmanager.WifiApManager
+ info.whitebyte.hotspotmanager.WifiApManager$1
+ info.whitebyte.hotspotmanager.WifiApManager$1$1
+com/alternadom/wifiiot/WifiIotPlugin.java
+ com.alternadom.wifiiot.WifiIotPlugin
+ com.alternadom.wifiiot.WifiIotPlugin$1
+ com.alternadom.wifiiot.WifiIotPlugin$10
+ com.alternadom.wifiiot.WifiIotPlugin$11
+ com.alternadom.wifiiot.WifiIotPlugin$2
+ com.alternadom.wifiiot.WifiIotPlugin$3
+ com.alternadom.wifiiot.WifiIotPlugin$4
+ com.alternadom.wifiiot.WifiIotPlugin$5
+ com.alternadom.wifiiot.WifiIotPlugin$5$1
+ com.alternadom.wifiiot.WifiIotPlugin$6
+ com.alternadom.wifiiot.WifiIotPlugin$7
+ com.alternadom.wifiiot.WifiIotPlugin$8
+ com.alternadom.wifiiot.WifiIotPlugin$9

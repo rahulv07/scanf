@@ -1,7 +1,10 @@
 import 'package:scanf/services/auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/src/provider.dart';
+import '../loading.dart';
 import 'signup.dart';
+import 'package:restart_app/restart_app.dart';
+import 'package:scanf/main.dart';
 
 class Login7 extends StatefulWidget {
   const Login7({Key? key}) : super(key: key);
@@ -100,7 +103,17 @@ class _Login7State extends State<Login7> {
                                           .signIn(
                                             email: email,
                                             password: password,
+                                          )
+                                          .then((value) {
+                                        if (value == "Signed in") {
+                                          Navigator.pushReplacement(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    LoadingPage()),
                                           );
+                                        }
+                                      });
                                       setState(() {
                                         showSpinner = false;
                                       });
@@ -119,7 +132,7 @@ class _Login7State extends State<Login7> {
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  Navigator.push(
+                                  Navigator.pushReplacement(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
