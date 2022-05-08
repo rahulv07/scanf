@@ -40,9 +40,11 @@ class _HomePageState extends State<HomePage> {
     } else {
       print("Not Exists\n\n");
       await dataBase.setData().then((value) {
-        checkIn = "";
-        checkOut = "";
-        isFetching = false;
+        setState(() {
+          checkIn = "";
+          checkOut = "";
+          isFetching = false;
+        });
       });
     }
   }
