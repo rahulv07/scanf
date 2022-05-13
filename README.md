@@ -1,4 +1,4 @@
-# BioGuard : Zero-contact Biometric System
+# ScanF : Zero-contact Biometric System
 Scanning fingerprint...
 
 
