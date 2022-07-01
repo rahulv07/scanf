@@ -13,5 +13,18 @@
 - Cloud Firestore, an online database. This database is used to store all the attendance data.
 
 ## Screenshots 🏃:
-
-Need to be added.
+#### [Mobile Application](https://github.com/rahulv07/scanf/tree/master/scanf) 
+  <table>
+      <tr>
+       <td><img src="https://user-images.githubusercontent.com/73294587/176865171-53b0a41e-6be1-4cec-8796-6b0d39f5a5a7.png" height="450" width="250"></td>
+       <td><img src="https://user-images.githubusercontent.com/73294587/176865612-d613171d-f9a8-44cc-9aa5-923013f05f1e.png" height="450" width="250"></td>
+       <td><img src="https://user-images.githubusercontent.com/73294587/176867590-5a1ae0b7-fcf4-4dee-980c-078938a19195.png" height="450" width="250"></td>
+      </tr>
+  </table>
+  
+ #### Firestore Console
+  <table>
+       <tr>
+       <td><img src="https://user-images.githubusercontent.com/73294587/176865881-4abae5f7-f7f6-4b8d-be5f-d596886f9393.png" width="800"></td>
+      </tr>
+  </table>
