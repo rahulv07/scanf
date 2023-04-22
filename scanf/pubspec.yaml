@@ -37,7 +37,7 @@ dependencies:
   local_auth: ^1.1.7
   intl: ^0.17.0
   wifi_iot: ^0.3.8
-  location: ^4.3.0
+  location: ^4.4.0
   flutter_spinkit: ^5.1.0
   provider: ^4.3.2+2
   #Firebase plugins
